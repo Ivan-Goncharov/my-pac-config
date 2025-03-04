@@ -5,8 +5,9 @@ function FindProxyForURL(url, host) {
         dnsDomainIs(host, "youtube.com") || 
         dnsDomainIs(host, "anthropic.com") || 
         dnsDomainIs(host, "openai.com") || 
-        dnsDomainIs(host, "claude.ai")) {
-        return "PROXY 85.158.61.14:1672";
+        dnsDomainIs(host, "claude.ai") ||
+        dnsDomainIs(host, "preply.com") ) {
+        return "PROXY 45.147.102.174:8000";
     }
     return "DIRECT";
 }
