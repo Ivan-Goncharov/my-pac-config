@@ -9,6 +9,8 @@ function FindProxyForURL(url, host) {
         dnsDomainIs(host, "googleapis.com") ||
         dnsDomainIs(host, "anthropic.com") ||
         dnsDomainIs(host, "openai.com") ||
+        dnsDomainIs(host, "chat.openai.com") ||
+        dnsDomainIs(host, "chatgpt.com") ||
         dnsDomainIs(host, "claude.ai") ||
         dnsDomainIs(host, "preply.com") ||
         dnsDomainIs(host, "linkedin.com") ||
