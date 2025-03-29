@@ -12,7 +12,14 @@ function FindProxyForURL(url, host) {
         dnsDomainIs(host, "claude.ai") ||
         dnsDomainIs(host, "preply.com") ||
         dnsDomainIs(host, "linkedin.com") ||
-        dnsDomainIs(host, "uizard.io")
+        dnsDomainIs(host, "uizard.io") ||
+        dnsDomainIs(host, "jetbrains.com") ||
+        dnsDomainIs(host, "jetbrains.space") ||
+        dnsDomainIs(host, "jetbrains.community") ||
+        dnsDomainIs(host, "jetbrains.net") ||
+        dnsDomainIs(host, "jetbrains.team") ||
+        dnsDomainIs(host, "jetbrains.io") ||
+        dnsDomainIs(host, "jetbrains.help")
     ) {
         return "PROXY 45.147.102.174:8000";
     }
