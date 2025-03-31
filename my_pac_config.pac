@@ -22,7 +22,16 @@ function FindProxyForURL(url, host) {
         dnsDomainIs(host, "jetbrains.team") ||
         dnsDomainIs(host, "jetbrains.io") ||
         dnsDomainIs(host, "jetbrains.help") || 
-        dnsDomainIs(host, "cursor.com")
+        dnsDomainIs(host, "cursor.com") ||
+        dnsDomainIs(host, "api2.cursor.sh") ||
+        dnsDomainIs(host, "cursor.sh") ||
+        dnsDomainIs(host, "main.vscode-cdn.net") ||
+        dnsDomainIs(host, "clientstream.launchdarkly.com") ||
+        dnsDomainIs(host, "www.googleapis.com") ||
+        dnsDomainIs(host, "firebaseremoteconfig.googleapis.com") ||
+        dnsDomainIs(host, "otel.gitkraken.com") ||
+        dnsDomainIs(host, "api.segment.io") ||
+        dnsDomainIs(host, "firebaselogging-pa.googleapis.com")
     ) {
         return "PROXY 45.147.102.174:8000";
     }
