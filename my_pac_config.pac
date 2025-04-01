@@ -21,7 +21,8 @@ function FindProxyForURL(url, host) {
         dnsDomainIs(host, "jetbrains.net") ||
         dnsDomainIs(host, "jetbrains.team") ||
         dnsDomainIs(host, "jetbrains.io") ||
-        dnsDomainIs(host, "jetbrains.help")
+        dnsDomainIs(host, "jetbrains.help") ||
+        dnsDomainIs(host, "github.com")
     ) {
         return "PROXY 45.147.102.174:8000";
     }
