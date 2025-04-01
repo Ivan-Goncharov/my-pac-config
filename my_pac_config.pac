@@ -22,7 +22,15 @@ function FindProxyForURL(url, host) {
         dnsDomainIs(host, "jetbrains.team") ||
         dnsDomainIs(host, "jetbrains.io") ||
         dnsDomainIs(host, "jetbrains.help") ||
-        dnsDomainIs(host, "github.com")
+        dnsDomainIs(host, "github.com") ||
+        dnsDomainIs(host, "education.github.com") ||
+        dnsDomainIs(host, "api.github.com") ||
+        dnsDomainIs(host, "raw.githubusercontent.com") ||
+        dnsDomainIs(host, "githubusercontent.com") ||
+        dnsDomainIs(host, "github.io") ||
+        dnsDomainIs(host, "vscode-unpkg.net") ||
+        dnsDomainIs(host, "marketplace.visualstudio.com") ||
+        dnsDomainIs(host, "vscode-unpkg.net")
     ) {
         return "PROXY 45.147.102.174:8000";
     }
