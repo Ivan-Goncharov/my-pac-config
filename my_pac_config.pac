@@ -30,7 +30,10 @@ function FindProxyForURL(url, host) {
         dnsDomainIs(host, "github.io") ||
         dnsDomainIs(host, "vscode-unpkg.net") ||
         dnsDomainIs(host, "marketplace.visualstudio.com") ||
-        dnsDomainIs(host, "vscode-unpkg.net")
+        dnsDomainIs(host, "vscode-unpkg.net") ||
+        dnsDomainIs(host, "*.github.com") ||
+        dnsDomainIs(host, "copilot.githubusercontent.com") ||
+        dnsDomainIs(host, "uizard.io")
     ) {
         return "PROXY 45.147.102.174:8000";
     }
