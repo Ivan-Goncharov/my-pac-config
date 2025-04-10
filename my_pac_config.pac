@@ -34,7 +34,14 @@ function FindProxyForURL(url, host) {
         dnsDomainIs(host, "*.github.com") ||
         dnsDomainIs(host, "copilot.githubusercontent.com") ||
         dnsDomainIs(host, "uizard.io") ||
-        dnsDomainIs(host, "gemini.google.com")
+        dnsDomainIs(host, "gemini.google.com") ||
+        dnsDomainIs(host, "notebooklm.google.com") ||
+        dnsDomainIs(host, "notebooklm.com") ||
+        dnsDomainIs(host, "notebooklm.googleapis.com") ||
+        dnsDomainIs(host, "*.notebooklm.google.com") ||
+        dnsDomainIs(host, "*.googleusercontent.com") ||
+        dnsDomainIs(host, "*.googleapis.com") ||
+        dnsDomainIs(host, "*.gstatic.com")
     ) {
         return "PROXY 45.147.102.174:8000";
     }
