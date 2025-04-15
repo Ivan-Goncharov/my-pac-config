@@ -47,3 +47,8 @@ function FindProxyForURL(url, host) {
     }
     return "DIRECT";
 }
+
+
+/Users/a1111/Library/Python/3.9/bin//aider
+
+export PATH="$HOME/Library/Python/3.9/bin:$HOME/.local/bin:$PATH"
