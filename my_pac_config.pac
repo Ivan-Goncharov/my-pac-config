@@ -41,14 +41,15 @@ function FindProxyForURL(url, host) {
         dnsDomainIs(host, "*.notebooklm.google.com") ||
         dnsDomainIs(host, "*.googleusercontent.com") ||
         dnsDomainIs(host, "*.googleapis.com") ||
-        dnsDomainIs(host, "*.gstatic.com")
+        dnsDomainIs(host, "*.gstatic.com") ||
+        dnsDomainIs(host, "*.augmentcode.com") ||
+        dnsDomainIs(host, "augmentcode.com") ||
+        dnsDomainIs(host, "*app.augmentcode.com") ||
+        dnsDomainIs(host, "app.augmentcode.com") ||
+        dnsDomainIs(host, "d1.api.augmentecode.com")
     ) {
         return "PROXY 45.147.102.174:8000";
     }
     return "DIRECT";
 }
 
-
-/Users/a1111/Library/Python/3.9/bin//aider
-
-export PATH="$HOME/Library/Python/3.9/bin:$HOME/.local/bin:$PATH"
