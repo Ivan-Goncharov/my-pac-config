@@ -1,6 +1,9 @@
 function FindProxyForURL(url, host) {
     if (dnsDomainIs(host, "medium.com") ||
         // dnsDomainIs(host, "grok.com") ||
+        dnsDomainIs(host, "jira.finam.ru") ||
+        dnsDomainIs(host, "ci.finam.ru") ||
+        dnsDomainIs(host, "finam.ru") ||
         dnsDomainIs(host, "x.ai") ||
         dnsDomainIs(host, "youtube.com")
         // dnsDomainIs(host, "googlevideo.com") ||
